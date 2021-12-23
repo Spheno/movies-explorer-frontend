@@ -1,0 +1,28 @@
+.nav-tab {
+  min-height: 66px;
+  background-color:#272727;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, max-content));
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-tab__link {
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  .nav-tab{
+    column-gap: 24px;
+  }
+
+  .nav-tab__link {
+    font-size: 11px;
+  line-height: 1.45;
+  }
+  }
+

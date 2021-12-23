@@ -1,0 +1,35 @@
+.promo {
+  background-color: #073042;
+  background-image: url("../../../images/landing-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px;
+  min-height: 524px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.promo__title {
+  max-width: 730px;
+  text-align: center;
+
+}
+
+@media (max-width: 850px) {
+.promo {
+  min-height: 784px;
+}
+}
+
+@media (max-width: 400px) {
+  .promo {
+    min-height: 570px;
+    background-size: 248px;
+  }
+
+  .promo__title {
+    max-width: 300px;
+  }
+  }

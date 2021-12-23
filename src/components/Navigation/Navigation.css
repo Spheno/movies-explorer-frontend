@@ -1,0 +1,46 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  color: #fff;
+  text-decoration: none;
+  align-self: center;
+
+  margin-right: 20px;
+}
+
+.navigation__link:first-of-type {
+  display: none;
+}
+
+.navigation__link:last-of-type {
+  margin-right: 0;
+}
+
+
+@media (max-width: 800px) {
+
+.navigation {
+  margin-top: 159px;
+  flex-direction: column;
+}
+
+.navigation__link:first-of-type {
+  display: block;
+}
+
+.navigation__link {
+  margin-bottom: 28px;
+  justify-self: flex-start;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.navigation {
+  margin-top: 144px;
+}
+
+}

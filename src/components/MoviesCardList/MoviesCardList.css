@@ -1,0 +1,30 @@
+.card-list {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 364px);
+  column-gap: 24px;
+  row-gap: 37px;
+  margin: 70px 0 10px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .card-list {
+    grid-template-columns: repeat(auto-fit, 339px);
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-bottom: 30px;
+    
+  }
+}
+
+@media (max-width: 750px) {
+  .card-list {
+    grid-template-columns: repeat(auto-fit, 300px);
+    row-gap: 14px;
+    margin: 40px 0 26px;
+  }
+}
