@@ -1,3 +1,18 @@
+@keyframes open {
+  from {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    right: -100%;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+  }
+}
+
 .header {
   min-height: 74px;
   display: flex;
@@ -7,11 +22,11 @@
   position: relative;
 }
 
-.header__type_not-auth {
+.header__type_main{
   background-color: #073042;
 }
 
-.header__type_auth {
+.header__type_other {
   background-color: #202020;
 }
 
@@ -104,28 +119,27 @@
   }
 
   .header__nav-container {
-    visibility: hidden;
+    display: none;
     background-color: #202020;
     min-width: 520px;
     min-height: 100vh;
     position: absolute;
     top: 0;
-    right: -100%;
+    right: 0;
     bottom: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    transition: 0.5s ease;
+
+    animation: open 0.5s ease;
   }
 
   .header__nav-container_type_open {
     display: flex;
     position: fixed;
-    visibility: visible;
-    right: 0;
-    transition: 0.5s ease;
-
     z-index: 1;
+    visibility: visible;
+    transition: 0.5s ease;
   }
 
   .header__link {
@@ -209,15 +223,14 @@
   }
 
   .header__nav-container {
-    
+
     min-width: 100%;
     min-height: 100vh;
-    
+
   }
 
   .header__profile {
     margin-bottom: 48px;
   }
-
 
 }

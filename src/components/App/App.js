@@ -42,29 +42,3 @@ function App() {
 };
 
 export default App;
-
-/*
- <Route path="/" element={
-          <>
-            <Header isLoggedIn={isLoggedIn} />
-            <Main />
-            <Footer />
-          </>
-        } />
-
-        <Route path="/movies" element={
-          <>
-            <Header isLoggedIn={isLoggedIn} />
-            <Movies />
-            <Footer />
-          </>
-        } />
-
-        <Route path="/saved-movies" element={
-          <>
-            <Header isLoggedIn={isLoggedIn} />
-            <SavedMovies />
-            <Footer />
-          </>
-        } />
-*/

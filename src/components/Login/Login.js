@@ -18,13 +18,13 @@ export function Login() {
         <form name="signin" className="form__container" >
           <label className="form__label" for="email">
             E-mail
-            <input type="email" name="email" className="form__input" id="email"
+            <input type="email" name="email" className="form__input input" id="email"
               placeholder="E-mail" minLength="2" maxLength="30" required />
             <span class="form__input-error" id="email-error"></span>
           </label>
           <label className="form__label" for="password">
             Пароль
-            <input type="password" name="password" minLength="3" className="form__input" id="password"
+            <input type="password" name="password" minLength="3" className="form__input input" id="password"
               placeholder="Пароль" required />
             <span class="form__input-error" id="password-error"></span>
           </label>

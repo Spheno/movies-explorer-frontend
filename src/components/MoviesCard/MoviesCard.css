@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+.card:hover {
+cursor: pointer;
+}
+
 .card__image {
   max-width: 364px;
 }
@@ -39,6 +43,20 @@ align-items: flex-start;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   max-width: 30px;
+}
+
+.card__delete {
+  padding: 7px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  max-width: 30px;
+}
+
+.card:hover .card__delete {
+  background-image: url(../../images/delete.svg);
+  background-repeat: no-repeat;
+  background-size: 7px;
+  background-position: center;
 }
 
 .card__time {

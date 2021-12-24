@@ -1,6 +1,6 @@
 import logo from '../../images/logo.svg';
-import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './Header.css';
 import { Navigation } from '../Navigation/Navigation';
 
@@ -18,8 +18,20 @@ export function Header({ isLoggedIn }) {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  let location = useLocation();
+
+  const [isMain, setIsMain] = useState(false)
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setIsMain(true);
+    } else {
+      setIsMain(false);
+    }
+  }, [location])
+
   return (
-    <header className={`header font-header ${isLoggedIn ? `header__type_auth` : `header__type_not-auth`}`}>
+    <header className={`header font-header ${isMain ? `header__type_main` : `header__type_other`}`}>
 
       <Link className="hover-link" to="/">
         <img className="form__logo" alt="логотип" src={logo} />
