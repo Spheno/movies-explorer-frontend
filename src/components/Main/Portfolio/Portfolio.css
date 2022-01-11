@@ -22,6 +22,7 @@
   letter-spacing: .04em;
   color: #fff;
   margin: 0 0 19px;
+  max-width: 90%;
 }
 
 .portfolio__link-container {
