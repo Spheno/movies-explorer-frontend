@@ -11,9 +11,24 @@
   padding: 0;
 }
 
-@media (max-width: 900px) {
+.card__null {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+}
+
+@media (max-width: 1279px) {
   .card-list {
     grid-template-columns: repeat(auto-fit, 339px);
+  }
+}
+
+@media (max-width: 900px) {
+  .card-list {
     column-gap: 10px;
     row-gap: 30px;
     margin-bottom: 30px;

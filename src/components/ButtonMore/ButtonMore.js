@@ -1,10 +1,10 @@
 import './ButtonMore.css'
 
-export function ButtonMore() {
+export function ButtonMore({ showMore, isMore }) {
 
   return (
      <section className="button-more page__container">
-       <button className="button-more__button hover-button" arial-lable="Еще" type="button">Ещё</button>
+       <button className={` ${isMore ? 'button-more__button hover-button' : 'hidden'}`} arial-lable="Еще" type="button" onClick={showMore}>Ещё</button>
      </section>
   );
 
