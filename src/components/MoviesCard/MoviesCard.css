@@ -6,25 +6,38 @@
 }
 
 .card:hover {
-cursor: pointer;
+  cursor: pointer;
+}
+
+.card__link {
+  
 }
 
 .card__image {
-  max-width: 364px;
+  width: 364px;
+  height: 203px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .card__info {
-margin: 16px;
-display: grid;
-grid-template-columns: repeat(2, minmax(max-content, min-content));
-column-gap: 12px;
-row-gap: 17px;
-justify-content: space-between;
-align-items: flex-start;
+  margin: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(max-content, min-content));
+  column-gap: 12px;
+  row-gap: 17px;
+  justify-content: space-between;
+  align-items: flex-start;
 
 }
 
 .card__title {
+  max-width: 290px;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.21;
@@ -32,6 +45,9 @@ align-items: flex-start;
   margin: 0;
   text-align: center;
   align-self: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__like {
@@ -78,13 +94,19 @@ align-items: flex-start;
   }
 
   .card__image {
-    max-width: 339px;
+    width: 339px;
+    height: 190px;
+
   }
 
   .card__info {
     margin: 14px;
     column-gap: 21px;
     row-gap: 15px;
+  }
+
+  .card__title {
+    max-width: 260px;
   }
 }
 
@@ -94,11 +116,12 @@ align-items: flex-start;
   }
 
   .card__image {
-    max-width: 300px;
+    width: 300px;
+    height: 168px;
   }
 
   .card__title {
-    font-size: 13px;
+    max-width: 240px;
   }
 
   .card__time {

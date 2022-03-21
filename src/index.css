@@ -131,7 +131,6 @@
 }
 
 .form__input-error {
-  visibility: hidden;
   color: #EE3465;
   padding: 0;
   margin: 0;
@@ -174,6 +173,8 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
+  position: relative;
+  margin-top: 15px;
 }
 
 .hidden {
@@ -194,6 +195,26 @@
 
 .active {
   font-weight: 500;
+}
+
+.message {
+  padding: 0;
+  margin: 0 0 20px;
+  min-width: 410px;
+  font-size: 11px;
+  line-height: 1.21;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  bottom: calc(100% - 15px);
+}
+
+.message_ok {
+  color: #008800;
+}
+
+.message_err {
+  color: #FF004C;
 }
 
 @media (max-width: 800px) {
